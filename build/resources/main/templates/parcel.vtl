@@ -1,0 +1,11 @@
+<p><h3>Your length is: $myParcel.getLength() .in</h3></p>
+<p><h3>Your width is: $myParcel.getWidth() .in</h3></p>
+<p><h3>Your height is: $myParcel.getHeight() .in</h3></p>
+<p><h3>Your distance is: $myParcel.getDistance() .mi</h3></p>
+
+#if ($myParcel)
+  <p><h3>Your Parcel Volume is: $myParcel.getVolume()</h3></p>
+  <p><h3>Your Distance is: $myParcel.getDistance() miles</h3></p>
+  <p><h3>Your Shipping cost is: $$myParcel.costToShip()</h3></p>
+  <p><h3>Shipping Cost  Calculated as: (Parcel Volume + 10% of Distance)/2</h3></p>
+#end

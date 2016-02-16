@@ -1,0 +1,21 @@
+<h1> Your Puzzle: </h1>
+
+#if($alteredSentence)
+  <h3 class="alteredSentence">$alteredSentence</h3>
+#end
+
+<form action='/guess' method='get'>
+  <div class="form-group">
+    <label for="guess">Enter a guess</label>
+    <input id="guess" name="guess" class="form-control" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-info">Make a Guess!</button>
+</form>
+
+
+
+
+#if($guessResult)
+  <h3 class="guessResult">$guessResult</h3>
+#end
